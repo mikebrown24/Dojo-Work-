@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>Delete a course</title>
+</head>
+<body>
+    <h1> Are you sure you want to delete the following course? </h1>
+    Name: {{course.course_name}}
+    Description: {{course.description}}
+    <form action="/" method="post">
+         <input type="submit" name="no" value="No">
+    </form>
+    <form action="/removethis" method="post">
+        <input type="submit" name="yes" value="Yes! I want to delete this">
+    </form>
+
+
+</body>
+</html>

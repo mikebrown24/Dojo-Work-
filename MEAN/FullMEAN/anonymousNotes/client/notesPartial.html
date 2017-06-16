@@ -1,0 +1,22 @@
+
+
+<form name="form" ng-submit="createNote()">
+    Note: <input type="text" name="note" ng-model="note.text" minlength="3" required>
+    <input type="submit" value="Add Note">
+</form>
+<br>
+<div class="messages" ng-messages="form.note.$error">
+    <p ng-message="minlength">The note has to be at least 3 characters. </p>
+    <p ng-message="required">A note is required. </p>
+</div>
+
+<div class="scroll">
+    <div ng-repeat="i in notes">
+        <div class="box">
+            <p class="noted"> Noted: {{i.createdAt | date: 'MMM dd, yyyy h:mm:ss a'}} </p>
+            <p class="notetext"> Note: {{i.text}} </p>
+        </div>
+    </div>
+</div>
+
+

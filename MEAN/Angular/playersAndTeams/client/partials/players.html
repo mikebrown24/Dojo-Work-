@@ -1,0 +1,26 @@
+<div ng-controller="PlayersController">
+    <div> 
+        <h1> Players </h1>
+        <form ng-submit="createPlayer()">
+             Name : <input type="text" ng-model="player.name">
+            <input type="submit" value="Add Player">
+        </form>
+        <br>
+    </div>
+    <div> 
+        <table>
+            <thead>
+                <tr> 
+                    <th> Name </th>
+                    <th> Actions </th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr ng-repeat="player in players track by $index">
+                    <td> {{player.name}} </td>
+                    <td> <button ng-click="deletePlayer($index)"> Remove Player </button> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="myJs.js"></script>
+    
+</head>
+<body>
+    <button onClick="helloWorld(prompt('top=?'));">Click Me!</button>
+</body>
+
+</html>
+
+<script>
+    
+    function isPrime(num){
+        
+       
+        for (var i = 2; i < num; i++){
+            if(num % i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+    function helloWorld(top){
+        
+        
+       if (isPrime(top))
+            {
+                console.log("it's prime!");
+            }
+       else
+            {
+                console.log("it's not prime");
+            }
+        //return true;
+    }
+    
+</script>

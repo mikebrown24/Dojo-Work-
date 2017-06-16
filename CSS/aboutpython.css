@@ -1,0 +1,89 @@
+#wrapper{
+    background-color: #3B78A8;
+    width: 920px;
+}
+.textsize{
+    margin: 30px;
+
+}
+#Normal{
+    color: yellow;
+}
+#Large{
+    color: yellow;
+}
+.toolbar{
+    background-color: cornflowerblue;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black;
+    
+
+}
+.categories{
+    color: white;
+    margin: 20px;
+    display: inline-block;
+    font-size: 25px;
+}
+.navigation{
+    list-style: square;
+    color: white;
+    display: inline-block;
+    padding: 50px;
+}
+.main{
+    color: white;
+    display: inline-block;
+    width: 551px;
+    padding: 0px;
+    text-align: center;
+    
+}
+.main_quotes{
+    color: yellow;
+    font-size: 20px;
+}
+.gettingStartapps{
+    background-color: white;
+    display: inline-block;
+    width: 920px;
+}
+
+.list_in_main{
+    color: cornflowerblue;
+}
+.copyright{
+    background-color: #3B78A8;
+    color: cornflowerblue;
+    text-align: center;
+    font-size: 20px;
+}
+#gettingstartedtitle{
+    text-align: center;
+}
+#applicationstitle{
+    text-align: center;
+}
+.box{
+    width: 421px;
+    height: 221px;
+    display: inline-block;
+    padding: 15px;
+    border-top: 4px solid #75a8d3;
+    vertical-align: top;
+}
+.copyright p{
+    display: inline-block;
+}
+.textsearchbar{
+    display: inline-block;
+    padding: 40px;
+    vertical-align: top;
+    color: white;
+}
+.pypi{
+    color: cornflowerblue;
+}
+
+

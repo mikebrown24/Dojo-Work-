@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title> Result </title>
+</head>
+<body>
+    <h1> Surprises : </h1>
+
+    {% for i in request.session.surprises %}
+        <p> {{i}} </p>
+    {% endfor %}
+</body>
+</html>

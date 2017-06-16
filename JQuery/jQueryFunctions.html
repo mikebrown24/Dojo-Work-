@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery.css">
+    <title>JQuery Functions</title>
+</head>
+<body>
+    <div id="numberOne">
+        <h1> Hello, Welcome to JQuery </h1>
+        <p> Let's play around a bit </p>
+        <h2> Mess with me!!! </h2>
+        <p> What's up? </p>
+        <button class="button"> Click on me </button>
+    </div>
+    <div id="numberTwo">
+        <h1> Hello again </h1>
+        <p> I'm starting to get the hang of code, except for JavaScript! </p>
+        <h2> Samsung Galaxy S8 </h2>
+        <p> Came out a couple of days ago, let's see how the reviews are first. </p>
+        <button class="buttontwo"> Just Click me </button>
+    </div>
+    <div id="numberThree">
+        <h1> I'm back </h1>
+        <p> These sun chips are very good, but I've eaten breakfast already therefore
+            I can't finish these right now at this moment. </p>
+        <h2> Okay okay okay </h2>
+        <p> I'm pretty good with HTML and CSS </p>
+        <button class="buttonthree"> Come into my world </button>
+    </div>
+
+    
+       
+</body>
+</html>
+    <script>
+ $(document).ready(function(){
+            $('h1').click(function(){
+                alert("Ah! I see you're learning fast!");
+            });
+        });
+            $('p').click(function(){
+                $('p').hide();
+            });
+            $('button').click(function(){
+                $('p').fadeIn();
+            });
+          
+           
+    </script>
+    

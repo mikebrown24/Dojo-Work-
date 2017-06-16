@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Disappearing Ninja</title>
+</head>
+<body>
+    <img id="image" src="entrepreneur.jpeg" width="350px" height="350px"> </img>
+    <img id="image" src="entrepreneur.jpeg" width="350px" height="350px"> </img>
+    <img id="image" src="entrepreneur.jpeg" width="350px" height="350px"> </img>
+    <img id="image" src="entrepreneur.jpeg" width="350px" height="350px"> </img>
+    <img id="image" src="entrepreneur.jpeg" width="350px" height="350px"> </img>
+    <img id="image" src="entrepreneur.jpeg" width="350px" height="350px"> </img>
+    <img id="image" src="entrepreneur.jpeg" width="350px" height="350px"> </img>
+    <img id="image" src="entrepreneur.jpeg" width="350px" height="350px"> </img>
+    
+    <button id="button"> Restore Pics </button>
+
+    
+</body>
+</html>
+
+
+<script>
+    $(document).ready(function(){
+        $('img').click(function(){
+            $(this).hide("slow");
+        });
+    });
+    $('#button').click(function(){
+        $('img').show();
+    });
+</script>

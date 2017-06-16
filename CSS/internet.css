@@ -1,0 +1,38 @@
+#wrapper{
+    background-color: white;
+    width: 750px;
+}
+#header1 img{
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+}
+#header1 h1{
+    display: inline-block;
+}
+#header1 span{
+    color: cornflowerblue;
+}
+
+#header1{
+    display: inline-block;
+}
+#header2{
+    background-color: cornflowerblue;
+    color: white;
+
+}
+#navigation p span{
+    color: darkred;
+    font-weight: bold;
+}
+
+.button1{
+    background-color: cornflowerblue;
+    color: white;
+}
+.button2{
+    background-color: darkorange;
+    color: white;
+}
+

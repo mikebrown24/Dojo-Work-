@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Users</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th> First Name </th>
+            <th> Last Name </th>
+            <th> Email Address </th>
+            <th> Contact # </th>
+        </tr>
+        <tr>
+            <td>    </td>
+            <td>    </td>
+            <td>    </td>
+            <td>    </td>
+        </tr>
+        <tr>
+            <td>    </td>
+            <td>    </td>
+            <td>    </td>
+            <td>    </td>
+        </tr>
+        <tr>
+            <td>    </td>
+            <td>    </td>
+            <td>    </td>
+            <td>    </td>
+        </tr>
+        <tr>
+            <td>    </td>
+            <td>    </td>
+            <td>    </td>
+            <td>    </td>
+        </tr>
+    </table>
+    <h1> Add User </h1> 
+    <p> First Name: </p> 
+    <form class="form1">
+        <input type="text" placeholder="First Name">
+    </form>
+    <p> Last Name: </p> 
+    <form class="form1">
+        <input type="text" placeholder="Last Name">
+    </form>
+    <p> Email Address: </p> 
+    <form class="form1">
+        <input type="text" placeholder="Email Address">
+    </form>
+    <p> Contact No: </p> 
+    <form class="form1">
+        <input type="text" placeholder="Phone No">
+    </form>
+    
+    <button id="button"> Add user </button>
+    
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#button").click(function(){
+            alert("You've submitted me");
+        });
+});

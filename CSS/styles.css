@@ -1,0 +1,86 @@
+.big-java{
+    background-color: red;
+    color: white;
+}
+
+.home{
+    background-color: teal;
+    color: lightskyblue;
+    text-decoration: underline lightblue;
+    font-size: 20px;
+    padding: 0px 12px;
+    
+}
+.first-word{
+    color:lightskyblue;
+
+}
+.key-word{
+    color: mediumpurple
+}
+#main-content{
+    background-color: midnightblue;
+    color: white;
+    
+}
+#followup{
+    background-color: dimgrey;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    padding: 15px 15px;
+}
+.header{
+    background-color: red;
+    color: white;
+}
+
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding:0px;
+}
+#wrapper{
+ width: 950px;
+ background-color:navy;
+ color: white;
+ margin: 0px auto;
+ display:inline-block;
+ padding:15px;
+
+}
+#header{
+ height: 150px;
+ background-color: darkred;
+ font-size: 40px;
+ border-radius: 10px;
+
+}
+#navigation{
+ width: 200px;
+ background-color: teal;
+ margin-top: 20px;
+ float: left;
+ border-radius: 10px;
+ 
+}
+#main_content{
+ width: 650px;
+ background-color: black;
+ color: white;
+ float: right;
+ padding: 15px;
+ margin-top: 20px;
+ font-size: 14px;
+ border-radius: 10px;
+
+
+}
+.subcontents{
+ height: 200px;
+ width: 210px;
+ background-color: yellow;
+ display: inline-block;
+ margin: 5px;
+
+}

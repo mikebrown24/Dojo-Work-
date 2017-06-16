@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Update Appointment</title>
+</head>
+<body>
+    <a href="/show_appointments"> Dashboard </a>
+    <a href="{% url 'logout' %}"> Logout </a>
+
+    <form action="update_appointments/{{user.id}}" method="post">
+    {% csrf_token %}
+    Tasks: <input type="text" value="{{appointments.tasks}}">
+    Status: <select>
+                <option> Done </option>
+                <option> Pending </option>
+                <option> Missed </option>
+            </select>
+    Date: <input type="text" value="{{appointments.date}}">
+    Time: <input type="time" value="{{appointments.time}}">
+    <input type="submit" value="Update">
+    </form>
+</body>
+</html>

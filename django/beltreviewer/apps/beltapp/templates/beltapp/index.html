@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title> Welcome </title>
+</head>
+<body>
+    <h1> Welcome! </h1>
+   
+
+    <div id="register">
+        <h3> Register </h3>
+        <form action="/process" method="post">
+        {% csrf_token %}
+       First Name:  <input type="text" name="first_name">
+       Last Name: <input type="text" name="last_name">
+       Alias: <input type="text" name="alias">
+       Email: <input type="text" name="email">
+       Password: <input type="password" name="password">
+       Confirm PW: <input type="password" name="confirm_pass">
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <div id="login">
+        <h1> Login </h1>
+        <form action="/login" method="post">
+        {% csrf_token %}
+        Email: <input type="text" name="email_log">
+        Password: <input type="password" name="password_log">
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+
+    {% if messages %}
+    <h2> Attention Required!!!!!! </h2>
+        {% for i in messages %}
+        <h3> {{i}} </h3>
+        {% endfor %}
+    {% endif %}
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+#header{
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#wrapper{
+    background-color:  #301E24;
+    width: 920px;
+
+}
+.titles{
+    color: white;
+    width: 300px;
+    background: radial-gradient(darkgray, white);
+    height: 50px;
+    font-size: 30px;
+}
+
+#contact{
+    background-color: white;
+    text-align: center;
+
+}
+.about{
+    width: 380px;
+    color: white;
+    background: radial-gradient(white, darkgray);
+
+}
+.box{
+    background: linear-gradient(to right,#67525C, white);
+    vertical-align: top;
+    height: 480px;
+    font-size: 13px;
+    
+}
+.button{
+    background-color:#407D61; 
+    color: white;
+    border-radius: 5px 5px;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+    margin: 10px;
+    
+    
+}
+.aboutdiv{
+    vertical-align: top;
+    margin: 40px;
+    background: linear-gradient(to right,#67525C, white); 
+    display: inline-block; 
+    width: 380px; 
+    height: 250px;
+}
+.pic{
+    margin: 30px;
+}

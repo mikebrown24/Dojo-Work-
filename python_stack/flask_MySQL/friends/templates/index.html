@@ -1,0 +1,38 @@
+<!-- Create an application that allows users to view all friends and add a new one:
+
+Have the main page show all users and their data as part of a table. On the same page allow users to enter data 
+and submit that data to the database in order to add a new friend. How many routes do you need? What should each do? 
+Think back to routing from the previous section, and remember never to render from a post route.
+-->
+<html>
+<head>
+  <title>Friends</title>
+</head>
+<body>
+  <h1>Friends:</h1>
+  <table>
+    <thead>
+      <th> Name </th>
+      <th> Age </th>
+      <th> Friend Since </th>
+    </thead>
+    <tbody>
+    {% for friend in friends %}
+      <tr>
+        <td> {{friend['first_name']}} {{friend['last_name']}} </td>
+        <td> {{friend['age']}} </td>
+        <td> {{friend['friends_since']}} </td>
+      </tr>
+    {% endfor %} 
+    </tbody>
+  </table>
+  
+  <hr>
+  <h2>Add a Friend:</h2>
+  <form action='/friends' method='POST'>
+    <label for="first_name">Name:<input type="text" name="name" id="name"></label>
+    <label for="last_name">Age:<input type="text" name="age" id="age"></label>
+    <input type="submit" value="Add">
+  </form>
+</body>
+</html>

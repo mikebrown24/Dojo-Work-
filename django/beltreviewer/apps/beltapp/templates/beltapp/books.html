@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title> Books Home </title>
+</head>
+<body>
+    {% if messages %}
+        {% for i in messages %}
+    <h1> {{i}}  </h1>
+        {% endfor %}
+    
+    {% endif %}
+
+    <a href="books/add"> Add Book and Review </a>
+    <a href="{% url 'logout' %}"> Logout </a>
+
+    <div id="recentbookreviews">
+        <h1> Recent Book Reviews: </h1>
+       
+    </div>
+
+    <div id="other">
+        <h1> Other Books with Reviews: </h1>
+    </div>
+
+
+
+</body>
+</html>

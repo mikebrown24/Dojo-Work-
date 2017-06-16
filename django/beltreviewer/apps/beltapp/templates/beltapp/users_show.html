@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Users</title>
+</head>
+<body>
+    <h1> THE USERS!!!!!!! </h1>
+    <table> 
+        <tr> 
+            <th> First Name </th>
+            <th> Last Name </th>
+            <th> Alias </th>
+            <th> Email </th>
+            <th> Edit/Delete </th>
+        </tr>
+           <tr> {% for i in users %} </tr>
+            <td> {{i.first_name}} </td>
+            <td> {{i.last_name}} </td>
+            <td> {{i.alias}} </td>
+            <td> {{i.email}} </td>
+            <td> <a href="update/{{i.id}}">Edit</a> <a href="deleteuser/{{i.id}}"> Delete </a> </td>
+            {% endfor %}
+    </table>
+
+   
+</body>
+</html>

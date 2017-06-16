@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Surprise Me </title>
+</head>
+<body>
+    <h1> Surprise ME!! </h1>
+    <form action="/process" method="post">
+        {% csrf_token %}
+        <p> Pick a number: </p>
+        <input type="text" name="number">
+        <input type="submit" value="Ready!">
+    </form>
+</body>
+</html>

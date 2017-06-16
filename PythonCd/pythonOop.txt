@@ -1,0 +1,15 @@
+-Objects have two very important features: Storage of 
+information and ability to execute some logic.
+-Objects store two different types of information: Attributes
+and methods. Attributes are characteristics of an object, and 
+methods are the things that object can do.
+- The _init_ method is called every time a new object is created. 
+-A class: Instructions for how to build many objects that share characteristics.
+-An object: A data type built according to specifications provided by the class definition.
+-An attribute: A value. Think of an attribute as a variable that is stored within an object.
+-A method: A set of instructions. Methods are functions that are associated with an object. 
+Any function included in the parent class definition can be called by an object of that class.
+-Python's __init__ method is something that's known as a magic method. Magic methods are 
+automatically created and sometimes invoked when a new instance of a class is created. One you'll 
+be working with in most classes you build is __init__.
+-__init__ is useful because it allows us to set some attributes when a new instance is created.

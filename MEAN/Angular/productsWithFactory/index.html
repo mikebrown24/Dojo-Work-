@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="productsApp">
+<head>
+   
+    <title>Document</title>
+    <script src="bower_components/angular/angular.js"> </script>
+    <script src="main.js"> </script>
+</head>
+<body>
+    <div ng-controller="productController">
+        <div> 
+            <h1> Products Controller </h1>
+            <form ng-submit="createProduct()">
+                Product Name: <input type="text" ng-model="product.name">
+                Product Price: <input type="text" ng-model="product.price">
+                <input type="submit" value="Add Product">
+            </form>
+            <br>
+        </div>
+        <div>
+            <table> 
+                <thead>
+                    <tr>
+                        <th> Name </th>
+                        <th> Price </th>
+                        <th> Actions </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="i in products track by $index">
+                        <td> {{i.name}} </td>
+                        <td> {{i.price}} </td>
+                        <td> <button ng-click="deleteProduct($index)"> Delete Product </button> </td>
+                    </tr>
+                </tbody>
+            </table>
+        <div>
+    </div>
+          
+                    
+    
+</body>
+</html>

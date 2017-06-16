@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <form action="/result" method="post">
+        Your name: <input type="text" name="name">
+        Dojo Location: <select name="Locations">
+                            <option value="chicago"> Chicago </option>
+                            <option value="seattle"> Seattle </option>
+                            <option value="sanjose"> San Jose </option>
+                        </select>
+        Favorite Language: <select name="Languages">
+                                <option value="python"> Python </option>
+                                <option value="ruby"> Ruby </option>
+                                <option value="mean"> Mean </option>
+                                <option value="dotnet"> C#.net </option>
+                                <option value="ios"> iOS </option>
+                            </select>
+        Comment (optional): <input type="text" name="comment">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

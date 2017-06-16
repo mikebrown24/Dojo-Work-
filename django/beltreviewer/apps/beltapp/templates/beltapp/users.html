@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title> User Reviews </title>
+</head>
+<body>
+    <a href="/books"> Home </a>
+    <a href="/books/add"> Add Book and Review </a>
+    <a href="{% url 'logout' %}"> Logout </a>
+    {% for i in users %}
+    User Alias: {{i.alias}}
+    Name: {{i.first_name}} {{i.last_name}}
+    Email: {{i.email}}
+    {% endfor %}
+   
+
+   
+
+</body>
+</html>

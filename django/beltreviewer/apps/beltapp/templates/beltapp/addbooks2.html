@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title> Add Book and Review </title>
+</head>
+<body>
+    <a href="/books"> Home </a>
+    <a href="{% url 'logout' %}"> Logout </a>
+
+    
+    Author: 
+    {% for i in createbooks %}
+        {{i}}
+    {% endfor %}
+    <b> Reviews: </b>
+       
+
+    <b> Add a Review: </b>
+    <form action="/books">
+        {% csrf_token %}
+        <input type="text" name="addreview">
+
+        <b> Rating: </b> <select name="rating">
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                        </select>
+                        stars.
+        <input type="submit" name="submitreview" value="Submit Review">
+
+    </form>
+
+</body>
+</html>

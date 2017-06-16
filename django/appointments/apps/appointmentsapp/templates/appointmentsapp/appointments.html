@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+     {% if messages %}
+        {% for i in messages %}
+    <h1> {{i}} </h1>
+        {% endfor %}
+    
+    {% endif %}
+     <a href="{% url 'logout' %}"> Logout </a>
+    <p> Here are your appointments for today, {{appointment.date}} </p>
+
+     <table> 
+        <tr> 
+            <th> Tasks </th>
+            <th> Time </th>
+            <th> Status </th>
+            <th> Action </th>
+            <th> Edit/Delete </th>
+        </tr>
+           <tr> {% for i in appointments %} </tr>
+            <td> {{i.tasks}} </td>
+            <td> {{i.time}} </td>
+            <td> {{i.status}} </td>
+            <td> {{i.action}} </td>
+            <td> <a href="update/{{i.id}}">Edit</a> <a href="delete_appointments/{{i.id}}"> Delete </a> </td>
+                {% endfor %}
+     </table>
+        <p> Your other appointments: </p>
+          <table> 
+            <tr> 
+                <th> Tasks </th>
+                <th> Date </th>
+                <th> Time </th>
+            </tr>
+            <tr>{% for i in appointments %}</tr>
+                    <td> {{i.tasks}} </td>
+                    <td> {{i.date}} </td>
+                    <td> {{i.time}} </td>
+                {% endfor %}
+          </table>
+
+
+        <h3> Add Appointment </h3>
+        <form action="/process_appointments" method="post">
+            {% csrf_token %}
+            Date: <input type="date" name="date">
+            Time: <input type="time" name="time">
+            Tasks: <input type="text" name="tasks">
+            <input type="submit" value="Add">
+        </form>
+    
+
+</body>
+</html>

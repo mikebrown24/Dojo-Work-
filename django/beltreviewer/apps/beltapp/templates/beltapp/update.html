@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <h1> Update User </h1>
+       
+      
+      
+      <form action="/edit_user/{{user.id}}" method="post">
+        {% csrf_token %}
+       First Name:  <input type="text" name="first_name" value="{{user.first_name}}">
+       Last Name: <input type="text" name="last_name" value="{{user.last_name}}">
+       Alias: <input type="text" name="alias" value="{{user.alias}}">
+       Email: <input type="text" name="email" value="{{user.email}}">
+       <input type="submit" name="submitupdate" value="Submit Update">
+      </form>
+</body>
+</html>

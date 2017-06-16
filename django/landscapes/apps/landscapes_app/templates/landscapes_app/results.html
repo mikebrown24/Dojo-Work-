@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title> RESULTS </title>
+    {% load staticfiles %}
+</head>
+<body>
+    results pageSS
+    {% if param <= 50 %}
+      <div class="landscape tropical"></div>
+      <img src="{% static 'landscapes_app/tropical.jpg' %}" alt="tropical">
+      <p> Hello World </p>
+     {% if param <= 40 %}
+      <div class="landscape vineyard"></div>
+      <img src="{% static 'landscapes_app/vineyard.jpg' %}" alt="vineyard">
+       {% if param <= 30 %}
+      <div class="landscape forest"></div>
+      <img src="{% static 'landscapes_app/forest.jpg' %}" alt="forest">
+       {% if param <= 20 %}
+      <div class="landscape desert"></div>
+      <img src="{% static 'landscapes_app/desert.jpg' %}" alt="desert">
+       {% if param <= 10 %}
+      <div class="landscape snow"></div>
+      <img src="{% static 'landscapes_app/snow.jpg' %}" alt="snow">
+    {% endif %} 
+    
+</body>
+</html>

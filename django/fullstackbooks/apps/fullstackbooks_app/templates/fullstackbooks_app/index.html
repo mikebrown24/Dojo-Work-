@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title> Books </title>
+</head>
+<body>
+    {% for i in books %}
+        <h3> Title: {{i.title}}    </h3>
+        <h3> Category: {{i.author}} </h3>
+        <h3> Author: {{i.category}} </h3>
+        <p> {{book.book}} </p>
+    {% endfor %}
+    <h1> Add a Book </h1>
+    <form action="/book" method="post">
+    {% csrf_token %}
+      Title:  <input type="text" name="title">
+      Category: <input type="text" name="category">
+      Author: <input type="text" name="author">
+      <input type="submit" name="submit" value="Submit!">
+    </form>
+</body>
+</html>

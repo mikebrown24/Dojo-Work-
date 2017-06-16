@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title> Add Book and Review </title>
+</head>
+<body>
+    <a href="/books"> Home </a>
+    <a href="{% url 'logout' %}"> Logout </a>
+    <h1> Add a New Book Title and a Review: </h1>
+    <form action="/books/addreview", method="post">
+        {% csrf_token %}
+        <b> Book Title: </b> <input type="text" name="booktitle">
+       <b> Author: </b> 
+            Choose from the list: <select name="authors">
+                                        {% for i in }
+                                        <option value=""> Whatever </option>
+                                        <option value=""> Whatever </option>
+                                        <option value=""> Whatever </option>
+                                        <option value=""> Whatever </option>
+                                    </select>
+            Or add a new author: <input type="text" name="addauthor">
+        <b> Review: </b> <input type="text" name="review">
+
+        <b> Rating: </b> <select name="rating">
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                        </select>
+        <input type="submit" name="addbookandreview" value="Add Book and Review">
+    </form>
+</body>
+</html>

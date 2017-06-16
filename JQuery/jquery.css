@@ -1,0 +1,24 @@
+#numberOne{
+    background-color: orange;
+    border-radius: 5px;
+}
+#numberTwo{
+    background-color: hotpink;
+    border-radius: 5px;
+}
+#numberThree{
+    background-color: limegreen;
+    border-radius: 5px;
+}
+.button{
+    background-color: black;
+    color: orange;
+}
+.buttontwo{
+    background-color: black;
+    color: hotpink;
+}
+.buttonthree{
+    background-color: black;
+    color: limegreen;
+}

@@ -1,0 +1,47 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> 151 Pokemon </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+</head>
+<body>
+    <script type="text/javascript">
+		function extract_images(){
+			for (var i = 1; i <= 151; i++) {
+				var img = '<img src="http://pokeapi.co/media/img/'+ i +'.png">';
+				$("#body_div").append(img);
+			}
+		}
+	</script>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Original 151 Pokemon</title>
+		<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+<body>
+
+	<div id="body_div">
+		
+	</div>
+
+	<script type="text/javascript">
+        $(document).ready(function(){
+		// function extract_images(){
+			for (var i = 1; i <= 151; i++){
+				var img = '<img src="http://pokeapi.co/media/img/'+ i +'.png">';
+				console.log(img);
+				$("#body_div").append(img);
+            }
+		});
+    // });
+	</script>
+</body>
+</html>
+

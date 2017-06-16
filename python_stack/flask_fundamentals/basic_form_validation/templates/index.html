@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title> Basic Validation Example </title>
+</head>
+<body>
+    <h1> Enter a Valid(Any) Name!!!! </h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for messages in messages %}
+                <p> {{message}} </p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <form action='/process' method='POST'>
+        Name: <input type="text" name="name">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+<!-- Validation Step 1 - Conditionals
+When validating our form data, we always need to use conditionals. At the base level, every validation 
+is conditional! In our case our conditional statement in pseudo code would look something like this:
+
+If the name field in the POST data is empty:
+
+Display validation error
+
+Else:
+
+Display success message -->
