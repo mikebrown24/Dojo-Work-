@@ -20,7 +20,7 @@ var Schema = mongoose.Schema;
 
 //db.createCollection("notes")
 var notesSchema = new Schema({
-  text: { type: String, required: true, minlength: 3 },
+  text: { type: String, required: true, minlength: 3 }, //Validator is minlength: 3
 }, { timestamps: true });
 
 //show collections
