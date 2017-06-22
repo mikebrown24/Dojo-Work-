@@ -1,0 +1,35 @@
+<a href="/#!"> Homepage </a> | <input class="" type="button" value="Sign Out" ng-click="logout()">
+
+<h2> <a href="/#!/profile/"> {{user.username}} </a> posted a topic: </h2>
+<h5> <b> {{topic.name}} <b> </h5>
+    <h5> {{topic.description}} </h5>
+
+<br>
+<div>
+<h1> Post your answer here... <h1>
+<form ng-submit="addPost()">
+    <textarea ng-model="post.content"> </textarea>
+    <input type="submit" value="Post">
+</form>
+
+<div ng-repeat="post in topic.posts">
+    <p> <a href="/#!/profile/"> {{post.user}} </a> {{post.content}} </p>
+    <button ng-click="like(post._id)">Like {{post.like.length}}</button>
+    <button ng-click="dislike(post._id)">Dislike {{post.dislike.length}}</button>
+</div>
+
+ <div ng-repeat="comment in comments">
+                <div ng-if="comment._topic._id === topic._id">
+                    <div class="box">
+                        <p> {{comment._user.username}} </p>
+                        <p> {{comment.comment}} </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <form ng-submit="addComment(topic._id, newcomment)">
+                    <textarea ng-model="newcomment.comment"></textarea>
+                    <input class="button" type="submit" value=" Add Comment">
+                </form>
+            </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="box">
+    <form ng-submit="loginUser()">
+        <br>
+        Email : <input type="text" ng-model="user.email" required>
+        <br>
+        <div class="messages" ng-messages="form.user.$error">
+           <p ng-message="required"> * An Email is required. </p>
+           <p ng-message="email"> This needs to be a valid email </p>
+        </div>
+        <br>
+        Password: <input type="password" ng-model="user.password" required>
+        <br>
+        <div class="messages" ng-messages="form.user.$error">
+            <p ng-message="required"> * A valid Password is required. </p>
+        </div>
+        <br>
+        <input type="submit" value="Log in">
+    </form>

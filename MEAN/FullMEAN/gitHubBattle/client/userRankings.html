@@ -3,13 +3,15 @@
 <div class="scroll">
     <div ng-repeat="user in users">
         <div class="box">
+
+           <img src="{{user.avatar_url}}" alt="user">
            <span>
-                Id
+               Score: {{user.score}}
            </span>
-           <img src="" alt="user">
            <span>
-               Score:
+               Name: {{user.name}}
            </span>
+           
         </div>
     </div>
 </div>

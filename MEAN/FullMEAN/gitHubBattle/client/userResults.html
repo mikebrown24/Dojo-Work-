@@ -1,13 +1,15 @@
-<div class="box">
+<div class="box" ng-if="user1.score>user2.score">
     <h1> 1st Place </h1>
-    <h4> user1.username (Score: user1.score) </h4>
+    <h4> User : {{user1.name}} Score: {{user1.score}} </h4>
     <h1> 2nd Place </h1>
-    <h4> user2.username (Score: user2.score) </h4>
+    <h4> User: {{user2.name}} Score: {{user2.score}} </h4>
 </div>
 
-<div class="box">
-    <img src="" alt="user">
-    <p> winner.username </p>
+<div class="box" ng-if="user2.score>user1.score">
+    <h1> 1st Place </h1>
+    <h4> User : {{user2.name}} Score: {{user2.score}} </h4>
+    <h1> 2nd Place </h1>
+    <h4> User: {{user1.name}} Score: {{user1.score}} </h4>
 </div>
 
-<input ng-click="" class="button" type="submit" value="Reset">
+<input ng-click="reset()" class="button" type="submit" value="Reset">

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="/#!"> Homepage </a> | <input class="" type="button" value="Sign Out" ng-click="logout()">
+    <h1> Welcome, {{user.username}}! </h1>
+        
+        
+    <div>
+           <input type="text" ng-model="filter_topics"> <button> Search </button>
+    <div>
+
+        
+        <!-- Search Bar Code.... Add in the filter from a previous assignment to search through topics -->
+
+
+        <div class="box">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Category </th>
+                            <th> Topic </th>
+                            <th> User Name </th>
+                            <th> Posts </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="topic in topics | filter:filter_topics">
+                            <td> {{topic.category}} </td>
+                            <td> <a href="/topic/"> {{topic.topic.name}} </a> </td>
+                            <td> <a href="/profile/"> {{topic._user.username}} </a> </td>
+                            <td> {{topic.posts.length}} </td>
+                        </tr>
+                    </tbody>
+                </table>
+        <br>
+        <br>
+        <div>
+            <h2> Add a new topic </h2>
+            <form ng-submit="addNewTopic()">
+                Topic: <textarea ng-model="topic.name"> </textarea> 
+                <br>
+                <br>
+                Description: <input type="text" ng-model="topic.description">
+                <!-- Put a new ng-model on everything you're entering into the form!!! -->
+                <br>
+                <br>
+                Category: <select ng-model="topic.category">
+                            <option value=""> </option>
+                            <option value="HTML"> HTML </option>
+                            <option value="Ruby on Rails"> Ruby on Rails </option>
+                            <option value="Python"> Python </option>
+                            <option value="MEAN"> MEAN </option>
+                            <option value="Web Development"> Web Development </option>
+                        </select>
+                <br>
+                <br>
+                <input class="button" type="submit" value=" Add Topic">
+            </form>
+        </div>
+        <br>
+        <br>
+           
+</body>
+
+</html>
